@@ -47,8 +47,22 @@ source .zshrc
 ```
 
 ```
-git clone https://huggingface.co/SparkAudio/Spark-TTS-0.5B pretrained_models/Spark-TTS-0.5B
-cd Spark-TTS-0.5B
-mkdir pretrained_models
+% pip install -r requirements.txt
+```
+
+```
+% mkdir -p /Users/statisticalfx/Development
+% cd /Users/statisticalfx/Development
+% git clone https://github.com/SparkAudio/Spark-TTS.git
+% cd Spark-TTS
+% git clone https://huggingface.co/SparkAudio/Spark-TTS-0.5B pretrained_models/Spark-TTS-0.5B
+```
+
+```
+% export PYTORCH_ENABLE_MPS_FALLBACK=1
+% pwd         
+/Users/statisticalfx/Development/Spark-TTS
+
+% python webui.py --device 0
 ```
 
