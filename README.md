@@ -1,8 +1,19 @@
 # spark-tts
 
 ```
+Install xcode-select and command line tools for XCode
+```
+
+```
+% /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+```
 % cat .zshrc                                           
 set -o vi
+
+# Set path for brew
+export PATH=$PATH:/opt/homebrew/bin
 
 # Load pyenv automatically by appending
 # the following to 
@@ -20,5 +31,18 @@ eval "$(pyenv virtualenv-init -)"
 ```
 
 ```
-% pyenv install 3.12
+source .zshrc
 ```
+
+```
+% brew install xz
+% brew install git-lfs
+```
+
+```
+% pyenv install 3.12
+% pyenv virtualenv 3.12 venv_spark_tts
+% pyenv activate venv_spark_tts
+
+```
+
