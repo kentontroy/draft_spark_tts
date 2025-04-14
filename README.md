@@ -46,3 +46,9 @@ source .zshrc
 
 ```
 
+```
+git clone https://huggingface.co/SparkAudio/Spark-TTS-0.5B pretrained_models/Spark-TTS-0.5B
+cd Spark-TTS-0.5B
+mkdir pretrained_models
+```
+
